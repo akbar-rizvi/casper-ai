@@ -77,6 +77,15 @@ const Work = () => {
         </div>
 
         </div>
+
+        <div className='p-4'>
+            <p className=''><span className='text-4xl font-bold' >EVERY</span> <span className='text-blue-500 font-bold text-4xl'>PLATFORM</span></p>
+
+            <p>
+                <b>has its own algorithm</b> — <span className='text-sm'>and we analyze each one for you. From formatting to timing, we tailor your content to meet platform standards and maximize reach, engagement, and visibility.</span>
+
+            </p>
+        </div>
       
     </div>
   )
