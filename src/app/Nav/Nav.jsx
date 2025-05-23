@@ -7,7 +7,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className='w-full flex justify-between items-center p-4 bg-white shadow-md relative z-50'>
+    <div className='w-full flex justify-between items-center p-4 bg-white/10 shadow-md   z-50 sticky top-0 backdrop-filter backdrop-blur-sm'>
       {/* Logo */}
       <div className='flex items-center md:flex-2'>
         <Image src="/cas.png" alt="logo" width={50} height={50} />
@@ -19,15 +19,15 @@ const Navbar = () => {
 
       {/* Desktop Menu */}
       <div className='hidden md:flex items-center justify-between   px-8 font-semibold md:flex-2 gap-3 sm:gap-1 sm:px-2 '>
-        <p className='cursor-pointer'>Features</p>
-        <p className='cursor-pointer'>How it works</p>
-        <p className='cursor-pointer'>Use Cases</p>
+        <p className='cursor-pointer hover:text-blue-500'>Features</p>
+        <p className='cursor-pointer  hover:text-blue-500'>How it works</p>
+        <p className='cursor-pointer  hover:text-blue-500 '>Use Cases</p>
       </div>
 
       {/* Desktop Buttons */}
-      <div className='hidden md:flex items-center justify-end-safe gap-4 md:flex-2'>
+      <div className='hidden md:flex items-center justify-end-safe gap-5 md:flex-2'>
         <p className='cursor-pointer'>Login</p>
-        <button className='flex items-center gap-1 font-thin bg-black text-white px-3 py-1 rounded-sm'>
+        <button className='flex items-center gap-1 font-thin bg-black text-white px-3 py-2 rounded-md text-sm'>
           Get Started <FaArrowRight />
         </button>
       </div>

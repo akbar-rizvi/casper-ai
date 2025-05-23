@@ -1,1 +1,12 @@
 @import "tailwindcss";
+html,body{
+    font-family: sans-serif;
+}
+
+.border-radius-left{
+    border-radius:10px 0px 0px 10px; ;
+}
+
+.border-radius-right{
+    border-radius: 0px 10px 10px 0px;
+}
