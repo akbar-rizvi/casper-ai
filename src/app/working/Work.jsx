@@ -9,15 +9,15 @@ const Work = () => {
         {/* flex flex-col  md:flex-row md:items-center md:justify-around md:gap-2 p-4 gap-2  */}
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4 lg:grid-cols-4'>
             <div className='w-auto bg-white p-4 rounded-lg shadow-sm'>
-                <p className='text-lg font-semibold py-2 text-center'>Insta Reel Geeration</p>
+                <p className='text-lg font-bold py-2 text-center pb-6'>Insta Reel Generation</p>
                 <p className='text-[12px] font-thin'>Buxa.ai</p>
                 <div className='flex items-center justify-center'>
                     <p className='text-sm flex-1 py-2 text-black/40'>An AI tool that creates engaging reels from your stories, complete with captions.</p>
-                    <Image src="/play1.png" alt="logo" width={40} height={40} className='flex-1 size-25 animate-[bounce_6s_ease-in-out_infinite]' />
+                    <Image src="/play1.png" alt="logo" width={50} height={30} className='flex-1 size-30  animate-[bounce_6s_ease-in-out_infinite]' />
                 </div>
             </div>
             <div className='w-auto bg-white p-4 rounded-lg shadow-sm'>
-                <p className='text-lg font-semibold py-2 text-center'>Article Generation</p>
+                <p className='text-lg font-bold py-2 text-center pb-6'>Article Generation</p>
                 <p className='text-[12px] font-thin'>Buxa.ai</p>
                 <div className='flex items-center justify-center'>
                 <p className='text-sm py-2 text-black/40'>An AI tool that performs deep research and writes high-quality, SEO-optimized articles for you.</p>
@@ -25,17 +25,17 @@ const Work = () => {
                 </div>
             </div>
             <div className='w-auto bg-white p-4 rounded-lg shadow-sm'>
-                <p className='text-lg font-semibold py-2 text-center'>PodCast Generation</p>
+                <p className='text-lg font-bold py-2 text-center pb-6'>PodCast Generation</p>
                 <p className='text-[12px] font-thin'>buxa.ai</p>
 
                 <div className='flex items-center justify-center'>
-                <p className='text-sm py-2 text-black/40'>An AI-powered tool that creates natural-sounding podcasts for you with ease.</p>
+                <p className='text-sm py-2 text-black/40 '>An AI-powered tool that creates natural-sounding podcasts for you with ease.</p>
                 <Image src="/headphone.jpg" alt="logo" width={140} height={140} className='flex-1  animate-[bounce_10s_ease-in-out_infinite]' />
                 </div>
             
             </div>
             <div className='w-auto bg-white p-4 rounded-lg shadow-sm'>
-                <p className='text-lg font-semibold py-2 text-center'>Ai Avatar creation</p>
+                <p className='text-lg font-bold py-2 text-center pb-6'>Ai Avatar creation</p>
                 <p className='text-[12px] font-thin'>Buxa.ai</p>
 
                 <div className='flex items-center justify-center'>
