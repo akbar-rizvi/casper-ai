@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+
 import { FaArrowRight } from "react-icons/fa";
 
 
@@ -7,10 +7,10 @@ const Blog = () => {
   return (
     <div className='min-h-[100vh] mx-auto max-w-[100vw] flex flex-col gap-15'>
        <div className='flex min-h-[100vh] mx-auto max-w-[100vw] gap-15 mb-10'>
-         {/* left image section */}
+         {/* left img section */}
         <div className='flex flex-col md:flex-row mx-10 relative flex-1'>
-            <Image src="/saas.jpg" alt="main" width={350} height={350} />
-            <Image src="/agency.jpg" alt="main" width={300} height={300} className='absolute left-[250px] top-[50px]' />
+            <img src="/saas.jpg" alt="main" width={350} height={350} />
+            <img src="/agency.jpg" alt="main" width={300} height={300} className='absolute left-[250px] top-[50px]' />
 
 
         </div>
@@ -35,8 +35,8 @@ const Blog = () => {
         {/* woman section */}
 
        <div className="relative w-[300px] h-[300px] mx-auto">
-  {/* Central Image */}
-  <Image
+  {/* Central img */}
+  <img
     src="/woman.png"
     alt="main"
     width={450}
@@ -50,7 +50,7 @@ const Blog = () => {
   </p>
 
   <p className="absolute top-10 right-[-75] bg-blue-500 text-white text-sm font-semibold rounded-full p-4 text-center">
-    Ultra-Realistic Images
+    Ultra-Realistic imgs
   </p>
 
   <p className="absolute bottom-10 right-[-30] bg-blue-500 text-white text-sm font-semibold rounded-full p-4 text-center">
@@ -88,14 +88,14 @@ const Blog = () => {
             {/* host section */}
             <div className='flex w-full justify-around items-center mx-auto'>
                 <div>
-                    <Image src="/host1.png" alt="main" width={400} height={400} className='p-3' />
+                    <img src="/host1.png" alt="main" width={400} height={400} className='p-3' />
                     <p className='bg-blue-500 text-white text-sm font-semibold rounded-full p-4 text-center relative top-[-20px]'>After AI :"I think we could...</p>
                 </div>
                 <div>
-                    <Image src="/podcasts.png" alt="main" width={300} height={300} />
+                    <img src="/podcasts.png" alt="main" width={300} height={300} />
                 </div>
                 <div>
-                     <Image src="/host2.png" alt="main" width={400} height={400}  className='p-1'/>
+                     <img src="/host2.png" alt="main" width={400} height={400}  className='p-1'/>
                      <p className='bg-blue-500 text-white text-sm font-semibold rounded-full p-4 text-center relative top-[-40px] '>"Sooo... umm... I think... maybe... like, we could—uh, yeah..."</p>
                 </div>
             </div>
@@ -118,9 +118,9 @@ const Blog = () => {
           
           <div className='flex items-center justify-between w-1/4'>
               <div className='flex items-center justify-center gap-5'>
-            <Image src="/medium.png" alt="main" width={40} height={40} />
-             <Image src="/spotify.png" alt="main" width={40} height={40} />
-              <Image src="/Podcast_io.png" alt="main" width={40} height={40} />
+            <img src="/medium.png" alt="main" width={40} height={40} />
+             <img src="/spotify.png" alt="main" width={40} height={40} />
+              <img src="/Podcast_io.png" alt="main" width={40} height={40} />
 
           </div>
 

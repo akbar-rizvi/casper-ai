@@ -10,7 +10,7 @@ const Navbar = () => {
     <div className='w-full flex justify-between items-center p-4 bg-white/10 shadow-md   z-50 sticky top-0 backdrop-filter backdrop-blur-sm'>
       {/* Logo */}
       <div className='flex items-center md:flex-2'>
-        <Image src="/cas.png" alt="logo" width={50} height={50} />
+        <img src="/cas.png" alt="logo" width={50} height={50} />
         <p className='ml-[-16px] pt-1 whitespace-nowrap'>
           <span className='text-blue-500 text-xl font-bold'>CASPER</span>&nbsp;
           <span className='font-bold text-xl'>AI</span>

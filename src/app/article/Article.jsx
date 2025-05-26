@@ -1,5 +1,5 @@
 import React from 'react'
-import Image from 'next/image'
+
 import { HiOutlinePaperClip } from "react-icons/hi";
 import { PiPaperPlaneRightBold } from "react-icons/pi";
 
@@ -18,7 +18,7 @@ const Article = () => {
           <div className="p-4 my-5 flex flex-col gap-5 md:flex-row relative md:items-center md:justify-around md:mt-5">
            <div className="relative w-[400px] h-[400px] flex flex-col">
 
-    <Image
+    <img
       src="/vrimage.png"
       alt="main"
       width={400}
@@ -27,7 +27,7 @@ const Article = () => {
     />
 
     {/* Top-left */}
-    <Image
+    <img
       src="/twitter.png"
       alt="twitter"
       width={100}
@@ -36,7 +36,7 @@ const Article = () => {
     />
 
     {/* Top-right */}
-    <Image
+    <img
       src="/youtube.png"
       alt="youtube"
       width={100}
@@ -45,7 +45,7 @@ const Article = () => {
     />
 
     {/* Bottom-left */}
-    <Image
+    <img
       src="/pinterest.png"
       alt="pinterest"
       width={100}
@@ -54,7 +54,7 @@ const Article = () => {
     />
 
     {/* Bottom-right */}
-    <Image
+    <img
       src="/linkedin.png"
       alt="linkedin"
       width={60}
@@ -63,7 +63,7 @@ const Article = () => {
     />
 
      <div className="prompt rounded-md bg-black/10 p-2 mt-20">
-        <p className='flex gap-3 '><HiOutlinePaperClip className='text-3xl text-gray-800  rotate-[-45deg]'/> <span className='font-thin'>Hey casper! lets turn this image into a Insta optimized for max reach.  </span> <PiPaperPlaneRightBold className='text-3xl text-gray-800'/></p>
+        <p className='flex gap-3 '><HiOutlinePaperClip className='text-3xl text-gray-800  rotate-[-45deg]'/> <span className='font-thin'>Hey casper! lets turn this img into a Insta optimized for max reach.  </span> <PiPaperPlaneRightBold className='text-3xl text-gray-800'/></p>
 
         </div>
 
@@ -73,7 +73,7 @@ const Article = () => {
 
 
             <div>
-              <Image src='/vrimage.png' alt='logo' width={400} height={400} className='rounded-lg ' />
+              <img src='/vrimage.png' alt='logo' width={400} height={400} className='rounded-lg ' />
               <div className='flex items-center justify-between my-1 '>
                 <div className='flex items-center gap-1'><span><FaRegHeart className='text-xl' /></span><span>120K</span> </div>
                 <div className='flex items-center gap-1' ><span><BiMessageRounded  className='text-2xl'/></span> <span>120K</span></div>

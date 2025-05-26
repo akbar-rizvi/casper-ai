@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+
 
 const Hero = () => {
   return (
@@ -23,7 +23,7 @@ const Hero = () => {
       <div className='w-full bg-white/40 absolute top-20 py-12 px-15'>
         <p className='text-sm font-thin'>Hey Creator</p>
         <p className='text-lg font-bold'>Supercharge Your Content Everywhere</p>
-        <p className='pb-10 md:pb-0  w-full md:w-1/3 text-md font-thin  text-black'>Turn your article, video, image, or podcast into a perfectly optimized post for every major platform </p>
+        <p className='pb-10 md:pb-0  w-full md:w-1/3 text-md font-thin  text-black'>Turn your article, video, img, or podcast into a perfectly optimized post for every major platform </p>
         <p className='text-md font-bold'> -automatically.</p>
       </div>
      </div>
