@@ -72,17 +72,29 @@ const Article = () => {
 </div>
 
 
-            <div>
-              <img src='/vrimage.png' alt='logo' width={400} height={400} className='rounded-lg ' />
-              <div className='flex items-center justify-between my-1 '>
-                <div className='flex items-center gap-1'><span><FaRegHeart className='text-xl' /></span><span>120K</span> </div>
-                <div className='flex items-center gap-1' ><span><BiMessageRounded  className='text-2xl'/></span> <span>120K</span></div>
-                <div className='flex items-center gap-1'><span><LuSend className='text-2xl'/></span><span>120K</span></div>
+            <div className='w-[400px] '>
+  <img src='/vrimage.png' alt='logo' width={400} height={400} className='rounded-lg w-full' />
+  
+  <div className='flex items-center justify-between my-1 w-full'>
+    <div className='flex items-center gap-1'>
+      <FaRegHeart className='text-xl' />
+      <span>120K</span>
+    </div>
+    <div className='flex items-center gap-1'>
+      <BiMessageRounded className='text-2xl' />
+      <span>120K</span>
+    </div>
+    <div className='flex items-center gap-1'>
+      <LuSend className='text-2xl' />
+      <span>120K</span>
+    </div>
+    <div className='flex items-center gap-1'>
+      <FaRegBookmark />
+      <span>189</span>
+    </div>
+  </div>
+</div>
 
-              <div className='flex items-center gap-1 '><span> <FaRegBookmark /></span> <span>189</span></div>
-              </div>
-
-            </div>
         </div>
 
         <button className='flex items-center justify-center gap-1 cursor-pointer  hover:scale-90  bg-black w-30 mx-auto my-5 text-white px-3 py-2 rounded-md text-sm'>
