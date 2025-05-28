@@ -9,8 +9,10 @@ import Footer from "./footer/Footer";
 export default function Home() {
   return (
    <>
-   <Navbar />
-   <Hero />
+   <div className="relative ">
+    <div className="fixed top-0  left-0 z-20 w-full backdrop-blur  "><Navbar /></div>
+   <Hero   />
+   </div>
    <Work />
    <Article />
    <Blog />

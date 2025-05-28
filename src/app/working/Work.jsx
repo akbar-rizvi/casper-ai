@@ -1,14 +1,22 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Work = () => {
+
+    useEffect(() => {
+  AOS.init({ duration: 1000 }); // optional: { once: true } if you want it only once
+}, []);
+
   return (
     <div className='mt-20 min-h-[100vh] bg-black/3'>
         {/* info section */}
 
         {/* flex flex-col  md:flex-row md:items-center md:justify-around md:gap-2 p-4 gap-2  */}
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4 lg:grid-cols-4'>
-            <div className='w-auto bg-white p-4 rounded-lg shadow-sm'>
+            <div className='w-auto bg-white p-4 rounded-lg shadow-sm ' data-aos="flip-up">
                 <p className='text-lg font-bold py-2 text-center pb-6'>Insta Reel Generation</p>
                 <p className='text-[12px] font-thin'>Buxa.ai</p>
                 <div className='flex items-center justify-center'>
@@ -16,7 +24,7 @@ const Work = () => {
                     <img src="/play1.png" alt="logo" width={50} height={30} className='flex-1 size-30  animate-[bounce_6s_ease-in-out_infinite]' />
                 </div>
             </div>
-            <div className='w-auto bg-white p-4 rounded-lg shadow-sm'>
+            <div className='w-auto bg-white p-4 rounded-lg shadow-sm' data-aos="flip-up">
                 <p className='text-lg font-bold py-2 text-center pb-6'>Article Generation</p>
                 <p className='text-[12px] font-thin'>Buxa.ai</p>
                 <div className='flex items-center justify-center'>
@@ -24,7 +32,7 @@ const Work = () => {
                 <img src="/note1.png" alt="logo" width={100} height={10} className='flex-1 animate-[bounce_5s_ease-in-out_infinite] ' />
                 </div>
             </div>
-            <div className='w-auto bg-white p-4 rounded-lg shadow-sm'>
+            <div className='w-auto bg-white p-4 rounded-lg shadow-sm' data-aos="flip-up">
                 <p className='text-lg font-bold py-2 text-center pb-6'>PodCast Generation</p>
                 <p className='text-[12px] font-thin'>buxa.ai</p>
 
@@ -34,7 +42,7 @@ const Work = () => {
                 </div>
             
             </div>
-            <div className='w-auto bg-white p-4 rounded-lg shadow-sm'>
+            <div className='w-auto bg-white p-4 rounded-lg shadow-sm' data-aos="flip-up">
                 <p className='text-lg font-bold py-2 text-center pb-6'>Ai Avatar creation</p>
                 <p className='text-[12px] font-thin'>Buxa.ai</p>
 

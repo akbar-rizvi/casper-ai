@@ -9,11 +9,11 @@ const Blog = () => {
         {/* Left Image Section */}
         <div className="relative flex justify-center items-center md:w-1/2">
           <img src="/saas.jpg" alt="main" className="w-[80%] max-w-xs" />
-          <img src="/agency.jpg" alt="main" className="absolute left-[50%] top-[20%] w-[60%] max-w-xs" />
+          <img src="/agency.jpg" alt="main" className="absolute md:left-[30%]  lg:left-[40%] md:top-[20%] top-[8%] left-[40%] w-[60%] max-w-xs right-20%" />
         </div>
 
         {/* Right Section */}
-        <div className="md:w-1/2 flex flex-col items-center gap-6 text-center">
+        <div className="md:w-1/2 flex flex-col items-center gap-6 text-center ">
           <p className="text-4xl md:text-6xl font-bold">
             ARTICLE / <span className="text-blue-800">BLOG</span>
           </p>
@@ -43,19 +43,19 @@ const Blog = () => {
               alt="main"
               className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[70%]"
             />
-            <p className="absolute top-0 left-0 transform -translate-x-1/2 bg-blue-500 text-white text-xs md:text-sm font-semibold rounded-full p-2">
+            <p className="absolute top-0 left-15 md:left-0 transform -translate-x-1/2 bg-blue-500 text-white text-xs md:text-sm font-semibold rounded-full p-2">
               Better Citations
             </p>
-            <p className="absolute top-10 right-[-40px] bg-blue-500 text-white text-xs md:text-sm font-semibold rounded-full p-2">
+            <p className="absolute top-10 md:right-[-40px] right-10 bg-blue-500 text-white text-xs md:text-sm font-semibold rounded-full p-2">
               Ultra-Realistic imgs
             </p>
-            <p className="absolute bottom-10 right-[-20px] bg-blue-500 text-white text-xs md:text-sm font-semibold rounded-full p-2">
+            <p className="absolute bottom-10 right-10 md:right-[-20px] bg-blue-500 text-white text-xs md:text-sm font-semibold rounded-full p-2">
               Niche Target
             </p>
             <p className="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 bg-blue-500 text-white text-xs md:text-sm font-semibold rounded-full p-2">
               Smart Audience
             </p>
-            <p className="absolute bottom-[50px] left-[-60px] bg-blue-500 text-white text-xs md:text-sm font-semibold rounded-full p-2">
+            <p className="absolute bottom-[50px] left-20 md:left-[-60px] bg-blue-500 text-white text-xs md:text-sm font-semibold rounded-full p-2">
               SEO-Optimisation
             </p>
           </div>
