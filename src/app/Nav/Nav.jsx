@@ -27,7 +27,7 @@ const Navbar = () => {
       {/* Desktop Buttons */}
       <div className='hidden md:flex items-center justify-end-safe gap-5 md:flex-2'>
         <p className='cursor-pointer text-white'>Login</p>
-        <button className='flex items-center gap-1 font-thin bg-black text-white px-3 py-2 rounded-md text-sm'>
+        <button className='flex items-center gap-1 font-thin bg-black text-white px-3 py-2 rounded-md text-sm m-2'>
           Get Started <FaArrowRight />
         </button>
       </div>
