@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 
 import { HiOutlinePaperClip } from "react-icons/hi";
 import { PiPaperPlaneRightBold } from "react-icons/pi";
@@ -7,47 +8,70 @@ import { FaRegHeart } from "react-icons/fa";
 import { BiMessageRounded } from "react-icons/bi";
 import { LuSend } from "react-icons/lu";
 import { FaRegBookmark } from "react-icons/fa6";
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { FaArrowRight } from "react-icons/fa";
 
+import CountUp from 'react-countup';
+
 const Article = () => {
+  
+
+
+    useEffect(() => {
+      AOS.init({ duration: 1000 });
+    });
+
+
+
   return (
     <div className="min-h-[100vh] flex flex-col">
       <div className="p-4 flex flex-col gap-5 md:flex-row relative  md:items-center md:justify-around md:mt-5  ">
         <div className="p-4 my-5 flex flex-col gap-5 md:flex-row relative md:items-center md:justify-around md:mt-5 lg:pl-30">
-          <div className="relative w-full max-w-[400px] h-auto flex flex-col mx-auto ">
+          <div className="relative w-full max-w-[400px] h-auto flex flex-col mx-auto rounded-ful">
             <img
               src="/vrimage.png"
               alt="main"
-              className="rounded-lg shadow-md shadow-black/50 w-full h-auto"
+              className="rounded-[30px] shadow-md shadow-black/50 w-full h-auto "
             />
 
             {/* Top-left */}
             <img
               src="/twitter.png"
               alt="twitter"
-              className="absolute top-[-45px] left-[-20px] w-[60px] h-[60px] rounded-full"
+              data-aos="zoom-in"
+              className="absolute top-[-45px] left-[-20px] w-[70px] h-[70px] rounded-full"
             />
 
             {/* Top-right */}
             <img
               src="/youtube.png"
               alt="youtube"
-              className="absolute top-[-50px] right-[-30px] w-[70px] h-[60px] rounded-full z-[-1]"
+              data-aos="zoom-in"
+              className="absolute top-[-50px] right-[-30px] w-[70px] h-[70px] rounded-full"
+            />
+
+            <img
+              src="/insta.png"
+              alt="youtube"
+              data-aos="zoom-in"
+              className="absolute top-50 right-[-70px] w-[90px] h-[90px] rounded-full z-3"
             />
 
             {/* Bottom-left */}
             <img
               src="/pinterest.png"
               alt="pinterest"
-              className="absolute bottom-[40px] left-[-30px] w-[60px] h-[60px] rounded-full"
+              data-aos="zoom-in"
+              className="absolute bottom-[120px] left-[-40px] w-[80px] h-[80px] rounded-full"
             />
 
             {/* Bottom-right */}
             <img
               src="/linkedin.png"
               alt="linkedin"
-              className="absolute bottom-[30px] right-[-30px] w-[40px] h-[40px] rounded-full shadow-md backdrop-filter"
+              data-aos="zoom-in"
+              className="absolute bottom-20 right-20 w-[80px] h-[70px]   backdrop-filter"
             />
 
             <div className="prompt rounded-md bg-black/10 p-2 mt-20 ">
@@ -74,26 +98,26 @@ const Article = () => {
             {/* Icons Section */}
             <div className="flex items-center gap-1">
               <FaRegHeart className="text-xl" />
-              <span>120K</span>
+              <span><CountUp end={120} duration={3} />k</span>
             </div>
             <div className="flex items-center gap-1">
               <BiMessageRounded className="text-2xl" />
-              <span>120K</span>
+              <span> <CountUp end={330} duration={4} />K</span>
             </div>
             <div className="flex items-center gap-1">
               <LuSend className="text-2xl" />
-              <span>120K</span>
+              <span><CountUp end={56} duration={2} />K</span>
             </div>
             <div className="flex items-center gap-1">
               <FaRegBookmark />
-              <span>189</span>
+              <span><CountUp end={189} duration={2} /></span>
             </div>
           </div>
         </div>
       </div>
 
-      <button className="flex items-center justify-center gap-1 cursor-pointer  hover:scale-90  bg-black w-30 mx-auto my-5 text-white px-3 py-2 rounded-md text-sm">
-        <span className="text-xl font-thin">Try</span>
+      <button className="flex items-center justify-center gap-1 cursor-pointer  hover:scale-98 shadow-lg shadow-black/50  bg-black w-30 mx-auto my-5 text-white px-3 py-2 rounded-md text-sm">
+        <span className="text-xl font-thin ">Try</span>
         <span>
           <FaArrowRight />
         </span>

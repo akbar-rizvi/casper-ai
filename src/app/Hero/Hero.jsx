@@ -27,7 +27,7 @@ const Hero = () => {
           controls={false}
           style={{
             width: "100vw", // full viewport width
-            height: "60vh", // half viewport height
+            height: "70vh", // half viewport height
             objectFit: "cover",
             display: "block",
           }}
@@ -36,7 +36,7 @@ const Hero = () => {
         </video>
       </div>
 
-      <div className=" w-full flex flex-col sm:flex-row sm:items-center sm:justify-center rounded-md  gap-0 -mt-1">
+      <div className=" w-full flex flex-col sm:flex-row sm:items-center sm:justify-center rounded-md  gap-0 transform -translate-y-1/2">
         {/* <button className="w-full border-radius-left shadow-2xl sm:w-auto border-1 border-black/20 cursor-pointer p-4 font-bold bg-white hover:bg-blue-500 hover:text-white hover:border-0">
           Content Creator
         </button> */}
@@ -49,9 +49,9 @@ const Hero = () => {
       </div>
 
       <div
-        className="w-full flex flex-col items-center justify-center sm:mt-2 mt-2 md:30"
+        className="w-full flex flex-col items-center justify-center sm:mt-2 "
         data-aos="fade-up">
-  <p className="text-3xl text-blue-800 font-bold mt-10">Hey</p>
+  <p className="text-3xl text-blue-800 font-bold ">Hey</p>
   <p className="text-3xl font-bold">Creators !</p>
   <p className="px-5 text-center">
     Have Content Already? Optimize it with Casper Ai

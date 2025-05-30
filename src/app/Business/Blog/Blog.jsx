@@ -1,5 +1,7 @@
+"use client";
 import React from 'react';
 import { FaArrowRight } from 'react-icons/fa';
+import GlowingMicrophone from '../mic/Mic';
 
 const Blog = () => {
   return (
@@ -8,8 +10,8 @@ const Blog = () => {
       <div className="flex flex-col md:flex-row gap-10 mb-10">
         {/* Left Image Section */}
         <div className="relative flex justify-center items-center md:w-1/2">
-          <img src="/saas.jpg" alt="main" className="w-[80%] max-w-xs" />
-          <img src="/agency.jpg" alt="main" className="absolute md:left-[30%]  lg:left-[40%] md:top-[20%] top-[8%] left-[40%] w-[60%] max-w-xs right-20%" />
+          <img src="/saas.jpg" alt="main" className="w-[80%] max-w-xl max-h-[90vh] " />
+          <img src="/agency.jpg" alt="main" className="absolute md:left-[30%] max-h-[70vh]  lg:left-[40%] md:top-[15%] top-[8%] left-[40%] w-[60%] max-w-xl right-20%" />
         </div>
 
         {/* Right Section */}
@@ -63,16 +65,17 @@ const Blog = () => {
       </div>
 
       {/* Podcast Section */}
-      <div className="w-full">
+      <div className='flex flex-col  gap-20'>
+        <div className="w-full   gap-4">
         <div className="flex flex-col items-center gap-6">
           <div className="w-full max-w-2xl text-center">
             <p className="text-3xl md:text-4xl font-bold">THE PODCAST EPISODE</p>
-            <p className="text-sm text-black/80">
+            <p className="text-sm text-black/50 p-3">
               Suffers from poor audio quality, lack of structure, unclear messaging, or unengaging delivery, which negatively impacts the listener experience and fails to effectively communicate the intended message.
             </p>
           </div>
 
-          <div className="flex flex-col md:flex-row items-center justify-around w-full gap-4">
+          <div className="flex flex-col md:flex-row items-center justify-around w-full gap-4 max-h-[500px]">
             <div className="flex flex-col items-center">
               <img src="/host1.png" alt="main" className="w-48 md:w-72 p-3" />
               <p className="bg-blue-500 text-white text-xs md:text-sm font-semibold rounded-full p-2 text-center -mt-4">
@@ -80,7 +83,8 @@ const Blog = () => {
               </p>
             </div>
             <div>
-              <img src="/podcasts.png" alt="main" className="w-48 md:w-60" />
+                <GlowingMicrophone />
+              {/* <img src="/podcasts.png" alt="main" className="w-48 md:w-60" /> */}
             </div>
             <div className="flex flex-col items-center">
               <img src="/host2.png" alt="main" className="w-48 md:w-72 p-1" />
@@ -93,7 +97,7 @@ const Blog = () => {
       </div>
 
       {/* Platforms Section */}
-      <div className="w-full flex flex-col md:flex-row items-center justify-between gap-6 p-3">
+      <div className="w-full flex flex-col md:flex-row items-center justify-between gap-6 p-3 mt-100 md:mt-0 ">
         <div className="text-center md:text-left">
           <p className="font-bold">Gear up for success with full optimization for all major platforms</p>
           <p className="font-light text-sm text-black/70">
@@ -106,6 +110,7 @@ const Blog = () => {
             <img src="/medium.png" alt="main" className="w-8 h-8" />
             <img src="/spotify.png" alt="main" className="w-8 h-8" />
             <img src="/Podcast_io.png" alt="main" className="w-8 h-8" />
+          
           </div>
           <button className="flex items-center justify-center gap-2 hover:scale-90 transition-transform border border-black px-4 py-2 rounded-full text-sm">
             <span className="text-lg font-light">Try</span>
@@ -113,6 +118,9 @@ const Blog = () => {
           </button>
         </div>
       </div>
+      </div>
+
+       
     </div>
   );
 };

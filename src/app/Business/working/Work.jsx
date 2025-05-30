@@ -11,7 +11,7 @@ const Work = () => {
 }, []);
 
   return (
-    <div className='mt-20 min-h-[100vh] bg-black/3'>
+    <div className='mt-20 min-h-[100vh] bg-white    '>
         {/* info section */}
 
         {/* flex flex-col  md:flex-row md:items-center md:justify-around md:gap-2 p-4 gap-2  */}
@@ -56,14 +56,14 @@ const Work = () => {
         {/* working section */}
         <div>
         <div className='flex flex-col  justify-start p-4 mt-5'>
-            <p className='text-4xl font-bold text-blue-800 pl-4'>HOW</p>
-            <p className='text-4xl font-bold pl-4'>IT WORKS</p>
+            <p className='md:text-[5rem] text-4xl font-bold text-blue-500 pl-20'>HOW</p>
+            <p className='md:text-[5rem] text-4xl font-bold pl-20 pt-0'>IT WORKS</p>
         </div>
 
         {/* working flow */}
-        <div className=' w-full flex flex-col items-center  justify-center  md:flex-row md:items-center md:justify-around md:gap-2 p-4 gap-2'>
+        <div className=' w-full flex flex-col items-center my-20  justify-center  md:flex-row md:items-center md:justify-around md:gap-2 p-4 gap-2'>
            <div className='flex flex-col items-center gap-2'>
-             <img src="/idea.gif" alt="logo" width={200} height={200} className='rounded-full'/>
+             <img src="/idea.gif" alt="logo" width={100} height={100} className='rounded-full '/>
             <p className='text-sm'>Uplaod your ideas and content  or generate with Buxa.ai</p>
            </div>
             
@@ -72,13 +72,13 @@ const Work = () => {
            
 
        <div className='flex flex-col items-center gap-2'>
-              <img src="/social-media.gif" alt="logo" width={200} height={200} className='rounded-full '/>
+              <img src="/social-media.gif" alt="logo" width={100} height={100}  className='rounded-full '/>
               <p  className='text-sm'>Choose the platform you wamts to optimsie for.</p>
        </div>
               <img src="/right-arrow.gif" alt="logo" width={50} height={50} className='rounded-full rotate-90 md:rotate-0'/>
 
              <div className='flex flex-col items-center gap-2'>
-                 <img src="/goal.gif" alt="logo" width={200} height={200} className='rounded-full'/>
+                 <img src="/goal.gif" alt="logo" width={100} height={100}  className='rounded-full'/>
               <p  className='text-sm'>Get fully optimized content for you socials </p>
              </div>
 
@@ -87,7 +87,7 @@ const Work = () => {
         </div>
 
         <div className='p-4 mx-4'>
-            <p className=''><span className='text-4xl font-bold' >EVERY</span> <span className='text-blue-500 font-bold text-4xl'>PLATFORM</span></p>
+            <p className=''><span className='md:text-7xl font-bold text-4xl' >EVERY</span> <span className='text-blue-500 font-bold md:text-7xl md:pl-5 text-4xl '>PLATFORM</span></p>
 
             <p>
                 <b>has its own algorithm</b> — <span className='text-sm'>and we analyze each one for you. From formatting to timing, we tailor your content to meet platform standards and maximize reach, engagement, and visibility.</span>

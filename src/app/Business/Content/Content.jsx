@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import Image from "next/image";
 import { FaArrowRight } from 'react-icons/fa';
@@ -5,7 +6,7 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const Content = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen   lg:mt-[10vh] md:mt-[20vh] mt-[30vh]">
       {/* heading grafics  */}
       <div className="">
         <p className="md:text-4xl text-3xl font-bold pl-8">Supercharge Your Content Everywhere</p>

@@ -1,6 +1,7 @@
+"use client"
 const Footer = () => {
   return (
-    <footer className="bg-white border-t text-gray-800 px-6 py-10">
+    <footer className="bg-white border-t text-gray-800 px-6 py-10 md:mt-10 mt-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo and Address */}
         <div>
