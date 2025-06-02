@@ -75,7 +75,7 @@ const Blog = () => {
             </p>
           </div>
 
-          <div className="flex flex-col md:flex-row items-center justify-around w-full gap-4 max-h-[500px]">
+          <div className="flex flex-col md:flex-row items-center justify-around w-full gap-2 max-h-[500px]">
             <div className="flex flex-col items-center">
               <img src="/host1.png" alt="main" className="w-48 md:w-72 p-3" />
               <p className="bg-blue-500 text-white text-xs md:text-sm font-semibold rounded-full p-2 text-center -mt-4">

@@ -7,15 +7,15 @@ import 'aos/dist/aos.css';
 const Work = () => {
 
     useEffect(() => {
-  AOS.init({ duration: 1000 }); // optional: { once: true } if you want it only once
+  AOS.init({ duration: 1000 }); 
 }, []);
 
   return (
-    <div className='mt-20 min-h-[100vh] bg-white    '>
+    <div className='mt-20 min-h-[100vh] bg-white ' id='features'>
         {/* info section */}
 
-        {/* flex flex-col  md:flex-row md:items-center md:justify-around md:gap-2 p-4 gap-2  */}
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4 lg:grid-cols-4'>
+      
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4 lg:grid-cols-4' >
             <div className='w-auto bg-white p-4 rounded-lg shadow-sm ' data-aos="flip-up">
                 <p className='text-lg font-bold py-2 text-center pb-6'>Insta Reel Generation</p>
                 <p className='text-[12px] font-thin'>Buxa.ai</p>
@@ -55,7 +55,7 @@ const Work = () => {
         </div>
         {/* working section */}
         <div>
-        <div className='flex flex-col  justify-start p-4 mt-5'>
+        <div className='flex flex-col  justify-start p-4 mt-5' id="howitworks">
             <p className='md:text-[5rem] text-4xl font-bold text-blue-500 pl-20'>HOW</p>
             <p className='md:text-[5rem] text-4xl font-bold pl-20 pt-0'>IT WORKS</p>
         </div>

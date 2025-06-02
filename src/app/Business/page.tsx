@@ -11,15 +11,10 @@ import Work from "./working/Work";
 const page = () => {
   return (
     <>
-      <div className="relative">
-        {/* after scrolling to 80vh show navbar in background black */}
+      <Navbar />
 
-        <div className="fixed top-5 z-50 left-0 z-50 w-full flex justify-center  ">
-          <Navbar />
-        </div>
+      <BuusinessHero />
 
-        <BuusinessHero />
-      </div>
       <Work />
       <Article />
       <Blog />

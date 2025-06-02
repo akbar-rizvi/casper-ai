@@ -23,7 +23,7 @@ const GlowingMicrophone = () => {
   }, [isActive]);
 
   return (
-    <div className=" flex flex-col items-center justify-center max-h-[500px] to-blue-50 p-8">
+    <div className=" flex flex-col items-center justify-center  overflow-hidden to-blue-50 p-8">
       {/* Title */}
       <div className="mb-16 text-center">
        

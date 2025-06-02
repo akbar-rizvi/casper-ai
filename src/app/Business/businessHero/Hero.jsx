@@ -18,8 +18,8 @@ const BuusinessHero = () => {
           loop
           controls={false}
           style={{
-            width: "100vw", // full viewport width
-            height: "100vh", // half viewport height
+            width: "100vw", 
+            height: "100vh", 
             objectFit: "cover",
             display: "block",
           }}
@@ -28,7 +28,7 @@ const BuusinessHero = () => {
         </video>
       </div>
 
-      <div className=" w-full flex flex-col sm:flex-row sm:items-center sm:justify-center rounded-md  gap-0  absolute top-[68vh] md:top-[73vh] z-349">
+      <div className=" w-full flex flex-col sm:flex-row sm:items-center sm:justify-center rounded-md  gap-0  absolute top-[68vh] md:top-[73vh] z-13">
         {/* <button className="w-full border-radius-left shadow-2xl sm:w-auto border-1 border-black/20 cursor-pointer p-4 font-bold bg-white hover:bg-blue-500 hover:text-white hover:border-0">
           Content Creator
         </button> */}
@@ -41,12 +41,12 @@ const BuusinessHero = () => {
       </div>
 
       <div
-        className="w-full flex flex-col items-center justify-center sm:mt-2 md:mt-10 mt-4 absolute top-125 z-89 bg-white min-h-[10vh] pb-20"
+        className="w-full flex flex-col items-center justify-center sm:mt-2 md:mt-10 mt-4 absolute top-125 z-10 bg-white min-h-[10vh] pb-20"
         data-aos="fade-up"
        
         
       >
-        <p className="lg:mt-10 md:mt-20  sm:mt-30 mt-40">
+        <p className="lg:mt-10 md:mt-20  sm:mt-30 mt-40 z-1">
           <span className="text-4xl text-blue-800 font-bold ">Hey</span>{" "}
           <span className="text-4xl font-bold ">Business</span>
         </p>

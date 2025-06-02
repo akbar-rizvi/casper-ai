@@ -25,8 +25,9 @@ const Article = () => {
 
 
   return (
-    <div className="min-h-[100vh] flex flex-col">
+    <div className="min-h-[100vh] flex flex-col" id="usecases">
       <div className="p-4 flex flex-col gap-5 md:flex-row relative  md:items-center md:justify-around md:mt-5  ">
+        
         <div className="p-4 my-5 flex flex-col gap-5 md:flex-row relative md:items-center md:justify-around md:mt-5 lg:pl-30">
           <div className="relative w-full max-w-[400px] h-auto flex flex-col mx-auto rounded-ful">
             <img
@@ -48,14 +49,14 @@ const Article = () => {
               src="/youtube.png"
               alt="youtube"
               data-aos="zoom-in"
-              className="absolute top-[-50px] right-[-30px] w-[70px] h-[70px] rounded-full"
+              className="absolute top-[-50px] right-[-20px] w-[70px] h-[70px] rounded-full"
             />
 
             <img
               src="/insta.png"
               alt="youtube"
               data-aos="zoom-in"
-              className="absolute top-50 right-[-70px] w-[90px] h-[90px] rounded-full z-3"
+              className="absolute top-50 right-[-40px] w-[90px] h-[90px] rounded-full z-3"
             />
 
             {/* Bottom-left */}
