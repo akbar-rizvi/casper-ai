@@ -60,7 +60,7 @@ return (
       {/* Desktop Buttons */}
       <div className='hidden md:flex items-center gap-5'>
         <p className='cursor-pointer text-white'>Login</p>
-        <button className='flex items-center gap-1 font-thin bg-black text-white px-3 py-2 rounded-md text-sm'>
+        <button className='flex items-center gap-1 font-thin bg-black text-white px-3 py-2 rounded-full cursor-pointer md:px-4 text-sm'>
           Get Started <FaArrowRight />
         </button>
       </div>
@@ -84,7 +84,7 @@ return (
   <p className='cursor-pointer' onClick={() => scrollToSection('usecases')}>Use Cases</p>
   <hr className='w-full border-gray-200' />
   <p className='cursor-pointer'>Login</p>
-  <button className='flex items-center gap-1 font-thin bg-black text-white px-3 py-1 rounded-sm'>
+  <button className='flex items-center gap-1 rounded-full font-thin bg-black text-white px-3 py-1 rounded-sm'>
     Get Started <FaArrowRight />
   </button>
 </div>
