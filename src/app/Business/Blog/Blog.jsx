@@ -65,10 +65,10 @@ const Blog = () => {
       </div>
 
       {/* Podcast Section */}
-      <div className='flex flex-col  gap-20'>
+      <div className='flex flex-col   gap-20'>
         <div className="w-full   gap-4">
-        <div className="flex flex-col items-center gap-6">
-          <div className="w-full max-w-2xl text-center">
+        <div className="flex flex-col w-full items-end justify-end gap-6">
+          <div className="w-full max-w-2xl text-start mt-20">
             <p className="text-3xl md:text-4xl font-bold">THE PODCAST EPISODE</p>
             <p className="text-sm text-black/50 p-3">
               Suffers from poor audio quality, lack of structure, unclear messaging, or unengaging delivery, which negatively impacts the listener experience and fails to effectively communicate the intended message.
@@ -77,7 +77,7 @@ const Blog = () => {
 
           <div className="flex flex-col md:flex-row items-center justify-around w-full gap-2 max-h-[500px]">
             <div className="flex flex-col items-center">
-              <img src="lady1.png" alt="main" className="w-48 md:w-72 p-3 object-fit" />
+              <img src="lady1.png" alt="main" className="w-60 md:w-92 p-3  object-cover" />
               <p className="bg-blue-500 text-white text-xs md:text-sm font-semibold rounded-full p-2 text-center -mt-4">
                 After AI :"I think we could..."
               </p>
@@ -87,7 +87,7 @@ const Blog = () => {
               {/* <img src="/podcasts.png" alt="main" className="w-48 md:w-60" /> */}
             </div>
             <div className="flex flex-col items-center">
-              <img src="/lady2.png" alt="main" className="w-48 md:w-72 object-cover p-1" />
+              <img src="/lady2.png" alt="main" className="w-60 md:w-92 object-cover p-1" />
               <p className="bg-blue-500 text-white text-xs md:text-sm font-semibold rounded-full p-2 text-center -mt-4">
                 "Sooo... umm... I think... maybe... like, we could—uh, yeah..."
               </p>
@@ -97,15 +97,15 @@ const Blog = () => {
       </div>
 
       {/* Platforms Section */}
-      <div className="w-full flex flex-col md:flex-row items-center justify-between gap-6 p-3 mt-100 md:mt-0 ">
+      <div className="w-full flex flex-col md:flex-row items-center justify-between gap-6 p-3 mt-120 md:mt-10 ">
         <div className="text-center md:text-left">
           <p className="font-bold">Gear up for success with full optimization for all major platforms</p>
           <p className="font-light text-sm text-black/70">
             — including Spotify, Apple Podcasts, Google Podcasts, and more!
           </p>
         </div>
-s
-        <div className="flex flex-col md:flex-row items-center gap-5">
+
+        <div className="flex flex-col lg:flex-row items-center gap-5">
           <div className="flex items-center gap-4">
             <img src="/medium.png" alt="main" className="w-8 h-8" />
             <img src="/spotify.png" alt="main" className="w-8 h-8" />
