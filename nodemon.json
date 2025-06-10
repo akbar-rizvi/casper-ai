@@ -1,0 +1,8 @@
+{
+    "watch": ["."],
+  "ignore": [
+    "UserFiles/*",
+    "shared_optimization_results/*"
+  ],
+  "ext": "js,json"
+}
