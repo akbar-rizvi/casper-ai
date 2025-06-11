@@ -2,14 +2,12 @@ import express from "express";
 import router from "./routes";
 import cors from "cors"
 import passport from "passport";
+
 import { jwtStrategy } from "./config/token";
 import { envConfigs } from "./config/envconfig";
 
-import fs from "fs";
-import dbservices from "./services/dbservices";
-import postgreDb from "./config/db";
-import { articles } from "./models/schema";
-import { ArticleServices } from "./services/dbservices/articles";
+import swaggerUi from 'swagger-ui-express';
+import swaggerSpec from "./config/swaggerConfig"
 
 const app = express();
 
@@ -20,6 +18,7 @@ app.use(cors({ origin: "*"}));
 passport.use('jwt', jwtStrategy);
 
 app.use("/", router);
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
 app.listen(envConfigs.port, () => {
   console.log(`Server started on ${envConfigs.port}`);

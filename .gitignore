@@ -4,3 +4,5 @@ dist
 logs
 shared_optimization_results
 venv
+UserFiles
+testFiles

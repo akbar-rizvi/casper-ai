@@ -4,6 +4,7 @@ import { array } from "zod";
 import fs from "fs";
 import path from "path";
 import dbservices from "../services/dbservices";
+import { ArticleServices } from "../services/dbservices/articles";
 
 // platform must be array of social media
 type Platform =
@@ -27,6 +28,7 @@ export default class articleController {
   ): Promise<void> => {
     const { userPrompt, platform, isImageRequired, compile }: articleBody =
       req.body;
+      console.log(userPrompt, platform, isImageRequired, compile)
 
    try {
 
@@ -137,7 +139,7 @@ export default class articleController {
       fs.unlinkSync(`./UserFiles/${uiqueFileName}.txt`);
 
       //remove all files which starts with uuid in shared_optimization_results
-      
+
       const optimizationDir = path.resolve("shared_optimization_results");
       if (fs.existsSync(optimizationDir)) {
         const allFiles = fs.readdirSync(optimizationDir);
@@ -211,4 +213,13 @@ export default class articleController {
 
     return { jsonFiles, txtFiles };
   }
+
+  static generateImage = async (req: Request, res: Response) => {
+    try {
+     
+     
+    } catch (error) {
+      res.status(500).json({ status: false, message: error });
+    }
+  };
 }

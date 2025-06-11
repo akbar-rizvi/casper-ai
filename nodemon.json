@@ -1,8 +1,11 @@
-{
-    "watch": ["."],
-  "ignore": [
-    "UserFiles/*",
-    "shared_optimization_results/*"
-  ],
-  "ext": "js,json"
+{   "watch":[
+    "src"
+    ],
+    "ignore": [
+        "node_modules",
+        "dist",
+        "shared_optimization_results",
+        "UserFiles"
+    ],
+    "ext": "ts"
 }

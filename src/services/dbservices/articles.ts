@@ -53,4 +53,15 @@ export class ArticleServices {
 
     return result;
   };
+
+
+
+  static generateImage=async():Promise<any>=>{
+    try{
+       
+     
+    }catch(error:any){
+        throw new Error(error)
+    }
+  }
 }
