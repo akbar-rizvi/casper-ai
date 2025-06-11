@@ -1,61 +1,56 @@
 {
-  "id": "a10e79e6-3557-4387-b580-89a3130e2044",
+  "id": "d82754c5-9268-466f-a42f-169f86343468",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
-    "public.eventData": {
-      "name": "eventData",
+    "public.articles": {
+      "name": "articles",
       "schema": "",
       "columns": {
         "id": {
           "name": "id",
           "type": "serial",
-          "primaryKey": false,
+          "primaryKey": true,
           "notNull": true
         },
         "user_id": {
           "name": "user_id",
-          "type": "varchar",
+          "type": "integer",
           "primaryKey": false,
           "notNull": false
         },
-        "eventId": {
-          "name": "eventId",
+        "filename": {
+          "name": "filename",
           "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "ai_generated_post": {
+          "name": "ai_generated_post",
+          "type": "text",
           "primaryKey": false,
           "notNull": false
         },
-        "name": {
-          "name": "name",
-          "type": "varchar",
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
           "primaryKey": false,
-          "notNull": false
-        },
-        "type": {
-          "name": "type",
-          "type": "varchar",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "event_details": {
-          "name": "event_details",
-          "type": "varchar",
-          "primaryKey": false,
-          "notNull": false
+          "notNull": true,
+          "default": "now()"
         }
       },
       "indexes": {},
       "foreignKeys": {
-        "eventData_user_id_usersss_user_id_fk": {
-          "name": "eventData_user_id_usersss_user_id_fk",
-          "tableFrom": "eventData",
-          "tableTo": "usersss",
+        "articles_user_id_users_id_fk": {
+          "name": "articles_user_id_users_id_fk",
+          "tableFrom": "articles",
+          "tableTo": "users",
           "columnsFrom": [
             "user_id"
           ],
           "columnsTo": [
-            "user_id"
+            "id"
           ],
           "onDelete": "no action",
           "onUpdate": "no action"
@@ -67,51 +62,58 @@
       "checkConstraints": {},
       "isRLSEnabled": false
     },
-    "public.usersss": {
-      "name": "usersss",
+    "public.users": {
+      "name": "users",
       "schema": "",
       "columns": {
         "id": {
           "name": "id",
           "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "varchar(255)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "email": {
+          "name": "email",
+          "type": "varchar(255)",
           "primaryKey": false,
           "notNull": true
         },
-        "user_id": {
-          "name": "user_id",
-          "type": "varchar",
+        "password": {
+          "name": "password",
+          "type": "varchar(255)",
           "primaryKey": false,
           "notNull": false
         },
-        "app_id": {
-          "name": "app_id",
-          "type": "varchar",
+        "credits": {
+          "name": "credits",
+          "type": "integer",
           "primaryKey": false,
-          "notNull": false
+          "notNull": true,
+          "default": 50
         },
-        "device_id": {
-          "name": "device_id",
-          "type": "varchar",
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
           "primaryKey": false,
-          "notNull": false
+          "notNull": true,
+          "default": "now()"
         }
       },
       "indexes": {},
       "foreignKeys": {},
-      "compositePrimaryKeys": {
-        "usersss_id_pk": {
-          "name": "usersss_id_pk",
-          "columns": [
-            "id"
-          ]
-        }
-      },
+      "compositePrimaryKeys": {},
       "uniqueConstraints": {
-        "usersss_user_id_unique": {
-          "name": "usersss_user_id_unique",
+        "users_email_unique": {
+          "name": "users_email_unique",
           "nullsNotDistinct": false,
           "columns": [
-            "user_id"
+            "email"
           ]
         }
       },

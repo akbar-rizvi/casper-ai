@@ -2,9 +2,11 @@
 import { auth } from "./auth";
 import {User} from "./user"
 import { Payment } from "./payment";
+import { ArticleServices } from "./articles";
 
 export default{
    auth,
    Payment,
-   User
+   User,
+   ArticleServices
 }

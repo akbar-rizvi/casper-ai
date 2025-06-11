@@ -3,6 +3,7 @@ import articleHelper from "../helper/articleGenerationHelper";
 import { array } from "zod";
 import fs from "fs";
 import path from "path";
+import dbservices from "../services/dbservices";
 
 // platform must be array of social media
 type Platform =
@@ -27,7 +28,9 @@ export default class articleController {
     const { userPrompt, platform, isImageRequired, compile }: articleBody =
       req.body;
 
-    if (!userPrompt) {
+   try {
+
+     if (!userPrompt) {
       res
         .status(400)
         .send({ status: false, message: "Please Enter User Prompt" });
@@ -127,11 +130,14 @@ export default class articleController {
 
       const textFiles = txtFiles.map(trimTxtContent);
 
+      console.log("textFiles", textFiles);
+
       // remove file uiqueFileName
-      
+
       fs.unlinkSync(`./UserFiles/${uiqueFileName}.txt`);
 
-      // remove all files which starts with uuid in shared_optimization_results
+      //remove all files which starts with uuid in shared_optimization_results
+      
       const optimizationDir = path.resolve("shared_optimization_results");
       if (fs.existsSync(optimizationDir)) {
         const allFiles = fs.readdirSync(optimizationDir);
@@ -141,19 +147,36 @@ export default class articleController {
           }
         }
       }
-    
-      res.json({
-        status: true,
-        message: "Article Generated Successfully",
-        jsonFileContents,
+
+
+      console.log("text file before", textFiles);
+      const {success,remainingCredits} = await dbservices.ArticleServices.saveArticles(
         textFiles,
-      });
+       3
+      );
+
+      console.log("saveArticles", success, remainingCredits);
+
+      if (success) {
+        res.json({
+          status: true,
+          message: "Article Generated Successfully",
+          credits: remainingCredits,
+          jsonFileContents,
+          textFiles,
+        });
+      }
     }
+    
+   } catch (error) {
+    res.status(500).json({ status: false, message: error });
+    console.error("Error:", error);
+    
+   }
   };
 
   static getFilesByUuid(uuid: string) {
     const optimizationDir = path.resolve("shared_optimization_results");
-   
 
     const jsonFiles: string[] = [];
     const txtFiles: string[] = [];
@@ -189,5 +212,3 @@ export default class articleController {
     return { jsonFiles, txtFiles };
   }
 }
-
-
