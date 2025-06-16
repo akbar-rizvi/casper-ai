@@ -20,6 +20,7 @@ passport.use('jwt', jwtStrategy);
 app.use("/", router);
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
+
 app.listen(envConfigs.port, () => {
   console.log(`Server started on ${envConfigs.port}`);
 });

@@ -214,7 +214,7 @@ export default class articleController {
     return { jsonFiles, txtFiles };
   }
 
-  static generateImage = async (req: Request, res: Response) => {
+  static generateImage = async (req: Request, res: Response): Promise<void> => {
     try {
      
      
