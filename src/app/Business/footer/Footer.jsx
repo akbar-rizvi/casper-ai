@@ -14,7 +14,7 @@ const Footer = () => {
           <p className="font-semibold mb-2">Get in Touch</p>
           <div className="flex gap-3 mb-2">
             <a href="#"><img src="/mail.png" alt="Email" className="w-6 h-6" /></a>
-            <a href="#"><img src="/linkedin2.png" alt="LinkedIn" className="w-6 h-6" /></a>
+            <a href="https://www.linkedin.com/company/thecasper-co-in/about/"><img src="/linkedin2.png" alt="LinkedIn" className="w-6 h-6" /></a>
             <a href="#"><img src="/twitter2.png" alt="Instagram" className="w-6 h-6" /></a>
             <a href="#"><img src="/instagram.png" alt="X" className="w-6 h-6" /></a>
           </div>
