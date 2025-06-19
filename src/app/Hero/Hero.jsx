@@ -12,6 +12,9 @@ const Hero = () => {
     window.location.href="/Business"
   }
 
+   const handleSocialMediapage=()=>{
+    window.location.href="/content"
+  }
   useEffect(() => {
   AOS.init({ duration: 1000 }); 
 }, []);
@@ -43,7 +46,7 @@ const Hero = () => {
         <button onClick={handleBusinesspage} className="w-full border-radius-left shadow-2xl sm:w-auto border-1 border-black/20 cursor-pointer p-4 font-bold bg-white hover:bg-blue-500 hover:text-white hover:border-0">
           Business Pages & Brands
         </button>
-        <button className="w-full border-radius-right  sm:w-auto border-1 border-black/20 shadow-lg cursor-pointer p-4 font-bold bg-white hover:bg-blue-500 hover:text-white hover:border-0">
+        <button onClick={handleSocialMediapage} className="w-full border-radius-right  sm:w-auto border-1 border-black/20 shadow-lg cursor-pointer p-4 font-bold bg-white hover:bg-blue-500 hover:text-white hover:border-0">
           Social Media Marketer
         </button>
       </div>

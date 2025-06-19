@@ -3,7 +3,7 @@
 const GoogleLoginButton = () => {
   const googleClientId = process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID;
 //   const redirectUri = `${process.env.NEXT_PUBLIC_BACKEND_API_BASE_URL}/auth/google`; //   backend api
-  const redirectUri = `${process.env.NEXT_PUBLIC_BACKEND_API_BASE_URL}/auth/google` //   backend api
+  const redirectUri = `${process.env.NEXT_PUBLIC_BACKEND_API_BASE_URL}`; //   backend api
 
 
 //   console.log({ googleClientId, redirectUri });
