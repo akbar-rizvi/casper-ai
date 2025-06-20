@@ -328,7 +328,7 @@ export default function SocialMediaContentGenerator() {
                     </div>
                   </div>
 
-                  <div className="bg-gradient-to-r  from-purple-50 to-pink-50 rounded-2xl p-6 mb-6 ">
+                  {/* <div className="bg-gradient-to-r  from-purple-50 to-pink-50 rounded-2xl p-6 mb-6 ">
                     <div className="flex md:flex-row flex-col gap-4  justify-center  space-x-8">
                       <button
                         type="button"
@@ -359,7 +359,43 @@ export default function SocialMediaContentGenerator() {
                         <span className="font-semibold">❌ No images needed</span>
                       </button>
                     </div>
-                  </div>
+                  </div> */}
+
+                  <div className="bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-6 mb-6">
+  <div className="flex md:flex-row flex-col gap-6 justify-center items-stretch">
+    <button
+      type="button"
+      onClick={() => setFormData(prev => ({ ...prev, needsImages: true }))}
+      className={`flex flex-1 cursor-pointer min-w-[200px] justify-center items-center space-x-3 px-8 py-4 rounded-xl transition-all duration-300 ${
+        formData.needsImages === true
+          ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg transform scale-105'
+          : 'bg-white text-gray-700 hover:bg-gray-50 shadow-md hover:shadow-lg'
+      }`}
+    >
+      <ImageIcon className="w-5 h-5" />
+      <span className="font-semibold">Yes, I need images</span>
+    </button>
+
+    <button
+      type="button"
+      onClick={() =>
+        setFormData(prev => ({
+          ...prev,
+          needsImages: false,
+          isImageRequired: [],
+        }))
+      }
+      className={`flex flex-1 cursor-pointer min-w-[200px] justify-center items-center space-x-3 px-8 py-4 rounded-xl transition-all duration-300 ${
+        formData.needsImages === false
+          ? 'bg-gradient-to-r from-gray-700 to-gray-900 text-white shadow-lg transform scale-105'
+          : 'bg-white text-gray-700 hover:bg-gray-50 shadow-md hover:shadow-lg'
+      }`}
+    >
+      <span className="font-semibold">❌ No images needed</span>
+    </button>
+  </div>
+</div>
+
 
                   {/* Image Platform Selection */}
                   {formData.needsImages === true && (

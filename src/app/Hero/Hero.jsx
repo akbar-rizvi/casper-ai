@@ -13,7 +13,8 @@ const Hero = () => {
   }
 
    const handleSocialMediapage=()=>{
-    window.location.href="/content"
+    console.log("clicked")
+    window.location.href="/Socialmedia"
   }
   useEffect(() => {
   AOS.init({ duration: 1000 }); 
