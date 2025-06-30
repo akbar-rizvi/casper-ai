@@ -163,8 +163,10 @@ export default function SocialMediaContentGenerator() {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+        'Authorization': `Bearer ${process.env.NEXT_PUBLIC_BACKEND_API_TOKEN}`
         },
-        body: JSON.stringify(apiData)
+        body: JSON.stringify(apiData),
+       
       });
       
       const result = await response.json();
@@ -178,6 +180,8 @@ export default function SocialMediaContentGenerator() {
     }
   };
 
+
+  console.log("token", process.env.NEXT_PUBLIC_BACKEND_API_TOKEN)
   const resetForm = () => {
     setFormData({
       userPrompt: "",
